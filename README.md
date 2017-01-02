@@ -10,8 +10,12 @@ AppFit is a tool to help analyze your existing applications, run some performanc
 
 AppFit itself uses Docker. It containerizes your applications, adds an instrumentation agent to each container and then runs the containers under a Docker Swarm Cluster. It uses a set of test suites which you specify, and runs them to measure the CPU usage, I/O bandwidth and network bandwidth of each application container. Once the performance benchmarks are obtained, AppFit then recommends the right-sized instance based on its analysis.
 
+### Download and installation
+
+Follow the steps below to download and install the AppFit distribution on your Docker Cluster.
+
 ```markdown
-Syntax highlighted code block
+# Download Instructions
 
 # Header 1
 ## Header 2
