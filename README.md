@@ -1,8 +1,10 @@
 ## Welcome to the AppFit Project
 
-You can use the [editor on GitHub](https://github.com/appfit/prototype1/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+When you are ready to deploy your application on a public cloud service such as AWS, Google Cloud or Azure, how do you pick the right instance sizes for your application components? Most teams end up over-provisioning the cloud instances which can potentially cost thousands of dollars in wasted expenditure.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+We are currently developing a tool which helps development teams and small businesses right-size their application containers for the cloud.
+
+AppFit is a tool to help analyze your existing applications, run some performance measurements on them and recommend the right-sized cloud instances.
 
 ### Markdown
 
