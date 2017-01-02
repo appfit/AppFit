@@ -4,11 +4,11 @@ When you are ready to deploy your application on a public cloud service such as 
 
 We are currently developing a tool which helps development teams and small businesses right-size their application containers for the cloud.
 
-AppFit is a tool to help analyze your existing applications, run some performance measurements on them and recommend the right-sized cloud instances.
+AppFit is a tool to help analyze your existing applications, run some performance measurements on them and recommend the right-sized cloud instances. It uses Docker technology and runs as a web application and can be locally hosted on your Docker Swarm or Kubernetes Cluster.
 
 ### How does it work?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+AppFit itself uses Docker. It containerizes your applications, adds an instrumentation agent to each container and then runs the containers under a Docker Swarm Cluster. It uses a set of test suites which you specify, and runs them to measure the CPU usage, I/O bandwidth and network bandwidth of each application container. Once the performance benchmarks are obtained, AppFit then recommends the right-sized instance based on its analysis.
 
 ```markdown
 Syntax highlighted code block
