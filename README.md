@@ -6,7 +6,7 @@ We are currently developing a tool which helps development teams and small busin
 
 AppFit is a tool to help analyze your existing applications, run some performance measurements on them and recommend the right-sized cloud instances.
 
-### Markdown
+### How does it work?
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
