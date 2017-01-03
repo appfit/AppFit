@@ -15,24 +15,21 @@ AppFit itself uses Docker. It containerizes your applications, adds an instrumen
 Follow the steps below to download and install the AppFit distribution on your Docker Cluster.
 
 ```markdown
-# Download Instructions
+# Clone the repository
 
-# Header 1
-## Header 2
-### Header 3
+git clone git@github.com:appfit/AppFit.git
 
-- Bulleted
-- List
+# Run setup.py
 
-1. Numbered
-2. List
+python setup.py install
 
-**Bold** and _Italic_ and `Code` text
+# Start the AppFit Web Service
 
-[Link](url) and ![Image](src)
+service app-fit start
+
+# Point your browser to http://localhost:8080 to launch the web app.
+
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Licensing
 
