@@ -1,0 +1,22 @@
+# Setup Application Environment
+
+# Get Python 3
+FROM python:2-onbuild
+
+# Install needed packages
+RUN \
+  apt-get -y update && \
+  apt-get -y install net-tools supervisor && \
+  apt-get clean && \
+  rm -rf /var/lib/apt/lists/*
+
+# Start our sample agent
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+COPY agent /usr/src/app/
+# COPY crude-udp-client-server/* /usr/src/app/
+COPY crude-udp-client-server/* /usr/src/app/
+
+# Supervisor for process management
+CMD ["/usr/local/bin/python", "/usr/src/app/agent/agent.py"]
+

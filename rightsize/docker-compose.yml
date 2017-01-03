@@ -1,0 +1,23 @@
+version: '2'
+services:
+  application-appImage:
+    build:
+      context: .
+      dockerfile: dockerfiles/Dockerfile.agent.0.gcc
+    ports:
+    - "12345"
+    links:
+    - redis
+    cpuset: "agentCpuSet"
+  test-appImage:
+    build:
+      context: .
+      dockerfile: dockerfiles/Dockerfile.client.0.gcc
+    links:
+    - redis
+    cpuset: "1"
+  redis:
+    image: redis
+    ports:
+    - "6379"
+    cpuset: "1"

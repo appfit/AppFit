@@ -1,0 +1,14 @@
+# this is the base package requirement spec
+#
+# to update/freeze package versions, use the following:
+# 'pip-compile --upgrade -v'
+# (you might need to 'pip install pip-tools' if you don't already have it)
+#
+# requirements.txt will contain the updated package references
+
+pyyaml
+redis
+python-magic
+plotly
+psutil
+

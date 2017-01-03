@@ -1,0 +1,19 @@
+# Setup Application Environment
+
+# Get Python 3
+FROM python:2-onbuild
+
+# Install needed packages
+RUN \
+  apt-get -y update && \
+  apt-get -y install supervisor && \
+  apt-get clean && \
+  rm -rf /var/lib/apt/lists/*
+
+# Copy the files n
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+COPY crude-udp-client-server/* /usr/src/app/
+
+CMD ["/usr/local/bin/python", "/usr/src/app/agent/client.py", "/usr/src/app/udp_s.py", "/usr/src/app/udp_c.py"]
+

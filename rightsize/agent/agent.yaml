@@ -1,0 +1,3 @@
+# Agent Configuration Parameters
+snapshotSize: 30
+maxSnapshots: 30

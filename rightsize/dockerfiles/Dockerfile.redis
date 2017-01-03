@@ -1,0 +1,14 @@
+# Redis Server Container
+
+# Get Python 3
+FROM python:2-onbuild
+
+# Redis server (needed by agent & client)
+RUN \
+  apt-get -y update && \
+  apt-get -y install redis-server net-tools supervisor && \
+  apt-get clean && \
+  rm -rf /var/lib/apt/lists/*
+
+CMD ["redis-server" ]
+
