@@ -33,7 +33,7 @@ service app-fit start
 
 ### Licensing
 
-AppFit is completely open-source, free to you and covered by the Apache 2.0 license.
+AppFit is completely open-source, free to use and covered by the Apache 2.0 license.
 
 ### Support or Contact
 
