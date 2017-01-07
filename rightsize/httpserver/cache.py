@@ -1,7 +1,7 @@
 import json
 import os
 
-CACHE_FOLDER = '../SampleAgent/Downloads'
+CACHE_FOLDER = './downloads'
 CACHE_FILE_NAME = 'server.cache'
 CACHE_PATH_NAME = CACHE_FOLDER + '/' + CACHE_FILE_NAME
 

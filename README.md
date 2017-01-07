@@ -25,9 +25,9 @@ python setup.py install
 
 # Start the AppFit Web Service
 
-service app-fit start
+./LaunchServer.sh
 
-# Point your browser to http://localhost:8080 to launch the web app.
+# Point your browser to http://localhost:3000 to launch the web app.
 
 ```
 
