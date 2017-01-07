@@ -19,7 +19,7 @@ from cache import Cache as Cache
 
 UPLOAD_FOLDER = './downloads'
 PACKAGE_PATH = UPLOAD_FOLDER + '/package'
-DOCKERBUILD_PACKAGE_PATH = 'Downloads/package'
+DOCKERBUILD_PACKAGE_PATH = './httpserver/downloads/package'
 ALLOWED_EXTENSIONS = set(['py', 'bz2', 'gz', 'egg', 'xz', 'zip'])
 TARFILE_EXTENSIONS = set(['.xz', '.gz', '.tar'])
 
@@ -33,7 +33,7 @@ def comments_handler():
 
     if request.method == 'POST':
         appData = request.form.to_dict()
-        os.chdir('../agent')
+        os.chdir('..')
         command = ['./LaunchAgent.sh', '-p%s' % DOCKERBUILD_PACKAGE_PATH,
                                        '-a%s' % appData['appCommand'],
                                        '-m%s' % appData['appPackage']]
