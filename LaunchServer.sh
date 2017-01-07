@@ -1,4 +1,5 @@
-cd rightsize/httpserver
-mkdir -p downloads
-python server.py
+EXECPATH=./rightsize
+mkdir -p $EXECPATH/downloads
+cd $EXECPATH
+python ./httpserver/server.py
 
