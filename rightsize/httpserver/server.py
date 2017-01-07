@@ -17,7 +17,7 @@ from flask import Flask, Response, request, redirect, url_for
 from werkzeug.utils import secure_filename
 from cache import Cache as Cache
 
-UPLOAD_FOLDER = '../SampleAgent/Downloads'
+UPLOAD_FOLDER = './downloads'
 PACKAGE_PATH = UPLOAD_FOLDER + '/package'
 DOCKERBUILD_PACKAGE_PATH = 'Downloads/package'
 ALLOWED_EXTENSIONS = set(['py', 'bz2', 'gz', 'egg', 'xz', 'zip'])
@@ -109,7 +109,9 @@ def file_upload_handler():
                 os.mkdir(PACKAGE_PATH)
             if ext in TARFILE_EXTENSIONS:
                 untarCmd = "tar xf %s -C %s" % (fullPath, PACKAGE_PATH)
+                print('Running tar command %s' % untarCmd)
                 subprocess.check_output(untarCmd, shell=True)
+            print('Finished untar')
             return 'File uploaded successfully'
     return
 
