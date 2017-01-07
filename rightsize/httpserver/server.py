@@ -33,7 +33,7 @@ def comments_handler():
 
     if request.method == 'POST':
         appData = request.form.to_dict()
-        os.chdir('../SampleAgent')
+        os.chdir('../agent')
         command = ['./LaunchAgent.sh', '-p%s' % DOCKERBUILD_PACKAGE_PATH,
                                        '-a%s' % appData['appCommand'],
                                        '-m%s' % appData['appPackage']]
