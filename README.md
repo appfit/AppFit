@@ -1,4 +1,4 @@
-## Welcome to the AppFit Project
+## Welcome to the AppFit Project Repository
 
 When you are ready to deploy your application on a public cloud service such as AWS, Google Cloud or Azure, how do you pick the right instance sizes for your application components? Most teams end up over-provisioning the cloud instances which can potentially cost thousands of dollars in wasted expenditure.
 
