@@ -1,3 +1,3 @@
-cd server
+cd rightsize/httpserver
 python server.py
 
